@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { itineraryData } from './data/itinerary';
 import ItineraryCard from './components/ItineraryCard';
-import { Calendar } from 'lucide-react';
+import { Calendar, Info } from 'lucide-react';
 
 function App() {
   const [activeDay, setActiveDay] = useState(1);
@@ -86,6 +86,26 @@ function App() {
               />
             ))}
           </div>
+
+          {/* Practical Notes Section */}
+          {currentDayData.notes && currentDayData.notes.length > 0 && (
+            <div className="mt-8 bg-blue-50/50 rounded-2xl p-5 border border-blue-100/50 backdrop-blur-sm">
+              <h3 className="text-xs font-bold text-blue-800 uppercase tracking-widest mb-4 flex items-center gap-2">
+                <Info size={14} /> 貼心筆記 & 備案
+              </h3>
+              <div className="space-y-3">
+                {currentDayData.notes.map((note, idx) => (
+                  <div key={idx} className="flex gap-3 text-sm text-slate-600 bg-white/60 p-3 rounded-xl border border-white/50">
+                    <div className="mt-0.5 text-blue-500 shrink-0">
+                      <note.icon size={16} />
+                    </div>
+                    <p className="leading-relaxed text-slate-700 font-medium">{note.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
         </main>
       </div>
     </div>
