@@ -235,13 +235,26 @@ export const itineraryData = [
     {
         day: 5,
         date: '7/17 (週五)',
-        title: '動物園與爸爸的皇居熱血跑',
-        summary: '滿足孩子的願望，也實現爸爸的跑步夢想。',
+        title: '晨間熱血與上野完美收尾',
+        summary: '皇居晨跑的熱血與上野燒肉的完美句點。',
         activities: [
             {
+                time: '07:00',
+                title: '皇居熱血跑 (5km)',
+                desc: '06:30 從上野出發至日比谷。跑者基地：Raffine Running Style Neo。07:15 起跑，08:00 完跑，08:30 洗澡完畢。',
+                icon: User,
+                type: 'activity',
+                highlight: true,
+                camera: {
+                    mode: 'C3 (Street)',
+                    desc: '皇居晨光與高樓',
+                    settings: '經典正片 + 強顆粒感'
+                }
+            },
+            {
                 time: '09:30',
-                title: '上野動物園',
-                desc: '看熊貓、看老虎（女兒最期待的行程）。',
+                title: '上野動物園任務',
+                desc: '在飯店與家人會合。趁早進場看熊貓與北極熊，避開中午後的人潮。',
                 icon: Palmtree,
                 type: 'activity',
                 camera: {
@@ -252,29 +265,29 @@ export const itineraryData = [
             },
             {
                 time: '13:00',
-                title: '阿美橫丁',
-                desc: '最後的藥妝與伴手禮大補貨。',
+                title: '阿美橫丁大採買',
+                desc: '逛藥妝、伴手禮，在充滿生活感的街頭拍照。',
                 icon: ShoppingBag,
                 type: 'shopping'
             },
             {
-                time: '16:30',
-                title: '皇居慢跑 (5km)',
-                desc: '爸爸獨處時間，建議從櫻田門起跑。',
-                icon: User,
-                type: 'activity',
+                time: '16:00',
+                title: '慶功宴：燒肉 房家 (Bouya)',
+                desc: '上野六丁目店。主打一頭牛採購的頂級和牛，肉質極佳。16:00 是避開人潮的黃金時段。',
+                icon: Utensils,
+                type: 'dining',
                 highlight: true,
                 camera: {
-                    mode: 'C3 (Street)',
-                    desc: '跑者風景',
-                    settings: '經典正片 + 強顆粒感'
+                    mode: 'C4 (Cafe)',
+                    desc: 'A5 和牛油花特寫',
+                    settings: '近距離對焦, 柔和模擬'
                 }
             },
             {
                 time: '19:00',
                 title: 'HARBS 上野松坂屋店',
-                desc: '最後一晚的蛋糕慶功宴。',
-                icon: Utensils,
+                desc: '買最後一晚的慶祝蛋糕回飯店享用。',
+                icon: Coffee,
                 type: 'dining'
             }
         ],
