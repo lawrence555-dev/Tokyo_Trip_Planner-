@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { itineraryData } from './data/itinerary';
 import ItineraryCard from './components/ItineraryCard';
-import { Calendar, Info } from 'lucide-react';
+import { Calendar, Info, Aperture, ChevronDown, ChevronUp } from 'lucide-react';
 
 function App() {
   const [activeDay, setActiveDay] = useState(1);
+  const [showCameraGuide, setShowCameraGuide] = useState(true);
 
   // Filter current day's data
   const currentDayData = itineraryData.find(d => d.day === activeDay);
@@ -28,6 +29,39 @@ function App() {
             A Family Photography Journey
           </p>
         </header>
+
+        {/* Global Camera Guide (Collapsible) */}
+        <div className="mx-6 mb-6">
+          <button
+            onClick={() => setShowCameraGuide(!showCameraGuide)}
+            className="w-full flex items-center justify-between p-3 bg-zinc-900 text-white rounded-t-xl"
+          >
+            <div className="flex items-center gap-2">
+              <Aperture size={16} className="text-cyan-400" />
+              <span className="text-xs font-bold tracking-widest uppercase">X-M5 Master Config</span>
+            </div>
+            {showCameraGuide ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+          </button>
+
+          {showCameraGuide && (
+            <div className="bg-zinc-50 border-x border-b border-zinc-200 rounded-b-xl p-4 text-xs space-y-3">
+              <div className="grid grid-cols-2 gap-3 pb-3 border-b border-zinc-200">
+                <div>
+                  <span className="block text-[10px] font-bold text-zinc-400 uppercase mb-1">C1 Airy Blue</span>
+                  <span className="text-zinc-700 block">+1.3 EV, 空氣感</span>
+                </div>
+                <div>
+                  <span className="block text-[10px] font-bold text-zinc-400 uppercase mb-1">C4 Cafe/Food</span>
+                  <span className="text-zinc-700 block">小框對焦草莓</span>
+                </div>
+              </div>
+              <div className="flex items-start gap-2 text-zinc-500 italic">
+                <Info size={12} className="mt-0.5 shrink-0" />
+                <p>自動對焦 (臉部偵測)：拍女兒 ON，拍蛋糕 OFF。</p>
+              </div>
+            </div>
+          )}
+        </div>
 
         {/* Day Selector (Minimal Tab) */}
         <div className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-zinc-100 py-2 px-6 overflow-x-auto no-scrollbar scroll-smooth">

@@ -4,7 +4,7 @@ export const itineraryData = [
     {
         day: 1,
         date: '7/13 (週一)',
-        title: '奢華鐵塔與精品首戰',
+        title: '奢華開場：虎之門鐵塔之夜',
         summary: '入住虎之門艾迪遜，開啟東京的奢華序幕。',
         activities: [
             {
@@ -16,53 +16,53 @@ export const itineraryData = [
             },
             {
                 time: '15:00',
-                title: '東京虎之門艾迪遜 Check-in',
-                desc: '開箱奢華大廳，感受隈研吾設計的木質綠意空間。',
+                title: '虎之門艾迪遜 Check-in',
+                desc: '開箱奢華大廳。',
                 icon: Hotel,
                 type: 'stay',
                 camera: {
-                    mode: 'C1 (Airy)',
-                    desc: '大廳綠意',
-                    settings: 'EV +1.3, DR400 (強光下背景不爆掉)'
+                    mode: 'C1 (Airy Blue)',
+                    desc: '大廳綠植空間',
+                    settings: 'EV +1.3, DR400'
                 }
             },
             {
                 time: '16:30',
                 title: '日本橋高島屋 S.C.',
-                desc: 'Goyard 補貨任務（目標完成最重要的清單）。',
+                desc: 'Goyard 補貨任務。',
                 icon: ShoppingBag,
                 type: 'shopping'
             },
             {
                 time: '19:00',
                 title: '銀座晚餐',
-                desc: '燒肉或壽司，享受東京的第一頓大餐。',
+                desc: '燒肉或壽司。',
                 icon: Utensils,
                 type: 'dining'
             },
             {
                 time: '21:00',
-                title: 'HARBS 有樂町店',
-                desc: '外帶蛋糕回飯店享用。',
+                title: 'HARBS 有樂町 Lumine 店',
+                desc: '離日本橋與銀座晚餐地點最近，外帶回飯店享用。',
                 icon: Coffee,
                 type: 'dining',
                 camera: {
-                    mode: 'C4 (Cafe)',
-                    desc: '鮮奶油層次',
-                    settings: '柔和模擬, 近距離對焦'
+                    mode: 'C4 (Cafe/Food)',
+                    desc: '蛋糕鮮奶油層次',
+                    settings: '縮小對焦框, 對焦草莓邊緣'
                 }
             },
             {
                 time: '22:00',
                 title: '房內夜景攝影',
-                desc: '關掉室內燈，拍攝窗外橘色的東京鐵塔夜景。',
+                desc: '關掉室內燈，對著窗外橘色鐵塔拍大片。',
                 icon: Camera,
                 type: 'activity',
                 highlight: true,
                 camera: {
-                    mode: 'C2 (Teal)',
-                    desc: '東京鐵塔夜景',
-                    settings: 'WB 4500K (強化的冷調氛圍)'
+                    mode: 'C2 (Teal & Orange)',
+                    desc: '窗外橘色鐵塔',
+                    settings: 'WB 4500K, 冷調氛圍'
                 }
             }
         ],
@@ -71,51 +71,51 @@ export const itineraryData = [
     {
         day: 2,
         date: '7/14 (週二)',
-        title: '原宿潮流與潮流之巔',
+        title: '潮流指標：原宿 ➜ 澀谷',
         summary: '感受原宿的年輕活力與澀谷的現代風貌。',
         activities: [
             {
                 time: '09:30',
                 title: '移防至銀座飯店',
-                desc: '先將行李寄存於接下來兩晚的住宿點。',
+                desc: '行李寄存。',
                 icon: Hotel,
                 type: 'transit'
             },
             {
                 time: '11:00',
                 title: '原宿 HUMAN MADE 旗艦店',
-                desc: '掃貨爸爸與女兒的潮流服飾。',
+                desc: '潮流父女裝掃貨。',
                 icon: ShoppingBag,
                 type: 'shopping'
             },
             {
                 time: '13:00',
                 title: '哈拉卡多 (Harakado) 頂樓',
-                desc: '拍攝對面東急廣場的複雜反射線條。',
+                desc: '俯拍原宿街景。',
                 icon: Camera,
                 type: 'activity',
                 camera: {
-                    mode: 'C3 (Street)',
-                    desc: '潮流建築對比',
+                    mode: 'C3 (Street Hype)',
+                    desc: '潮流建築與招牌',
                     settings: '經典正片 + 強顆粒感'
                 }
             },
             {
                 time: '15:30',
                 title: '澀谷宮下公園 (Miyashita Park)',
-                desc: '讓女兒在草地奔跑，看電車經過。',
+                desc: '讓女兒在草地奔跑。',
                 icon: Palmtree,
                 type: 'activity',
                 camera: {
-                    mode: 'C1 (Airy)',
+                    mode: 'C1 (Airy Blue)',
                     desc: '夕陽下清透膚色',
                     settings: 'EV +1.0, 柔和光影'
                 }
             },
             {
                 time: '17:00',
-                title: 'HARBS 澀谷店',
-                desc: '在 Scramble Square 享受高樓午茶。',
+                title: 'HARBS 澀谷 Scramble Square 店 (4F)',
+                desc: '就在宮下公園旁的高樓內，環境極佳，適合下午茶。',
                 icon: Coffee,
                 type: 'dining'
             }
@@ -125,33 +125,26 @@ export const itineraryData = [
     {
         day: 3,
         date: '7/15 (週三)',
-        title: '豐洲 KidZania 英語任務日',
-        summary: '全天專屬於孩子的職業體驗，傍晚享受海濱夕陽。',
+        title: '核心任務：KidZania 英語日',
+        summary: '全天專屬於孩子的職業體驗。',
         activities: [
             {
-                time: '08:30',
-                title: 'KidZania Tokyo',
-                desc: '位於豐洲 LaLaport 內。',
-                icon: MapPin,
-                type: 'transit'
-            },
-            {
                 time: '09:00',
-                title: 'English Wednesday 職業體驗',
-                desc: '女兒體驗各種職業，爸爸全程紀錄。',
+                title: 'KidZania Tokyo (豐洲)',
+                desc: 'Wednesday English Day：全英文職涯體驗。',
                 icon: Star,
                 type: 'activity',
                 highlight: true,
                 camera: {
-                    mode: 'C1 (Airy)',
-                    desc: '室內人像',
-                    settings: '確保膚色白皙不發黃'
+                    mode: 'C1 (Airy Blue)',
+                    desc: '室內體驗',
+                    settings: '確保室內光源下膚色白皙'
                 }
             },
             {
                 time: '16:00',
                 title: 'LaLaport 購物',
-                desc: '逛阿卡將或玩具反斗城。',
+                desc: '逛街、補充物資。',
                 icon: ShoppingBag,
                 type: 'shopping'
             },
@@ -162,15 +155,15 @@ export const itineraryData = [
                 icon: Camera,
                 type: 'activity',
                 camera: {
-                    mode: 'C2 (Teal)',
-                    desc: '海濱落日',
-                    settings: 'WB 4500K, 藍橘調'
+                    mode: 'C2 (Teal & Orange)',
+                    desc: '海邊夕陽',
+                    settings: '藍橘調夜景'
                 }
             },
             {
                 time: '20:00',
-                title: 'HARBS 銀座三越店',
-                desc: '回飯店前最後補給。',
+                title: 'HARBS 銀座三越店 (2F)',
+                desc: '從豐洲回銀座飯店必經，方便外帶回房。',
                 icon: Coffee,
                 type: 'dining'
             }
@@ -180,37 +173,37 @@ export const itineraryData = [
     {
         day: 4,
         date: '7/16 (週四)',
-        title: '晨光咖啡與移防上野',
+        title: '晨光咖啡 ➜ 鐵塔散步 ➜ 移防上野',
         summary: '從中目黑的咖啡香氣到上野的傳統風情。',
         activities: [
             {
                 time: '07:00',
                 title: '星巴克臻選® 東京烘焙工坊',
-                desc: '中目黑。避開人潮，拍攝巨型銅桶與咖啡細節。',
+                desc: '中目黑。避開人潮，拍攝巨型銅桶。',
                 icon: Coffee,
                 type: 'dining',
                 camera: {
-                    mode: 'C4 (Cafe)',
-                    desc: '咖啡拉花與烘豆',
+                    mode: 'C4 (Cafe/Food)',
+                    desc: '咖啡細節',
                     settings: '近距離對焦, 柔和模擬'
                 }
             },
             {
                 time: '10:00',
                 title: '芝公園 + 增上寺',
-                desc: '拍攝傳統寺廟與東京鐵塔的經典合影。',
+                desc: '拍攝傳統寺廟與東京鐵塔同框。',
                 icon: MapPin,
                 type: 'activity',
                 camera: {
-                    mode: 'C1 (Airy)',
+                    mode: 'C1 (Airy Blue)',
                     desc: '藍天下的紅鐵塔',
-                    settings: 'EV +1.3, DR400'
+                    settings: 'EV +1.3'
                 }
             },
             {
                 time: '12:00',
                 title: '麻布台之丘 Balcony by 6th',
-                desc: '享用著名的鬆餅午餐。',
+                desc: '全東京排名前三的巴斯克起司蛋糕 (可取代 HARBS)。',
                 icon: Utensils,
                 type: 'dining',
                 highlight: true
@@ -218,16 +211,9 @@ export const itineraryData = [
             {
                 time: '15:00',
                 title: '入住上野飯店',
-                desc: '立即啟動洗衣模式，處理累積的髒衣。',
+                desc: '啟動洗衣模式。',
                 icon: Hotel,
                 type: 'stay'
-            },
-            {
-                time: '19:00',
-                title: '上野晚餐',
-                desc: '炸豬排或在地拉麵。',
-                icon: Utensils,
-                type: 'dining'
             }
         ],
         notes: []
@@ -235,81 +221,85 @@ export const itineraryData = [
     {
         day: 5,
         date: '7/17 (週五)',
-        title: '晨間熱血與上野完美收尾',
+        title: '晨間熱血跑 ➜ 上野動物園 ➜ 燒肉慶功',
         summary: '皇居晨跑的熱血與上野燒肉的完美句點。',
         activities: [
             {
-                time: '07:00',
+                time: '06:40',
                 title: '皇居熱血跑 (5km)',
-                desc: '06:30 從上野出發至日比谷。跑者基地：Raffine Running Style Neo。07:15 起跑，08:00 完跑，08:30 洗澡完畢。',
+                desc: '06:40 上野出發 ➜ 07:00 Raffine 進場換裝 (日比谷線 A11 出口) ➜ 07:15 起跑 ➜ 08:20 洗澡 ➜ 08:50 退場。',
                 icon: User,
                 type: 'activity',
                 highlight: true,
                 camera: {
-                    mode: 'C3 (Street)',
-                    desc: '皇居晨光與高樓',
-                    settings: '經典正片 + 強顆粒感'
+                    mode: 'C3 (Street Hype)',
+                    desc: '清晨的皇居與丸之內大樓',
+                    settings: '經典正片'
                 }
             },
             {
                 time: '09:30',
-                title: '上野動物園任務',
+                title: '上野動物園',
                 desc: '在飯店與家人會合。趁早進場看熊貓與北極熊，避開中午後的人潮。',
                 icon: Palmtree,
                 type: 'activity',
                 camera: {
-                    mode: 'C1 (Airy)',
+                    mode: 'C1 (Airy Blue)',
                     desc: '女兒驚喜眼神',
-                    settings: '快速快門, 連拍'
+                    settings: '快速快門'
                 }
             },
             {
                 time: '13:00',
-                title: '阿美橫丁大採買',
-                desc: '逛藥妝、伴手禮，在充滿生活感的街頭拍照。',
+                title: '阿美橫丁',
+                desc: '藥妝與伴手禮最後採購。',
                 icon: ShoppingBag,
                 type: 'shopping'
             },
             {
                 time: '16:00',
-                title: '慶功宴：燒肉 房家 (Bouya)',
-                desc: '上野六丁目店。主打一頭牛採購的頂級和牛，肉質極佳。16:00 是避開人潮的黃金時段。',
+                title: '燒肉 房家 (Bouya) 上野店',
+                desc: '慶功宴。主打一頭牛採購的頂級和牛，肉質極佳。16:00 是避開人潮的黃金時段。',
                 icon: Utensils,
                 type: 'dining',
                 highlight: true,
                 camera: {
-                    mode: 'C4 (Cafe)',
-                    desc: 'A5 和牛油花特寫',
-                    settings: '近距離對焦, 柔和模擬'
+                    mode: 'C4 (Cafe/Food)',
+                    desc: '和牛油花',
+                    settings: '近距離對焦'
                 }
             },
             {
                 time: '19:00',
-                title: 'HARBS 上野松坂屋店',
+                title: 'HARBS 上野松坂屋店 (2F)',
                 desc: '買最後一晚的慶祝蛋糕回飯店享用。',
                 icon: Coffee,
                 type: 'dining'
             }
         ],
-        notes: []
+        notes: [
+            {
+                icon: Info,
+                text: '跑者基地：Raffine Running Style Neo (日比谷 MB1F)。費用 ¥900/次。'
+            },
+            {
+                icon: Info,
+                text: '建議「手ぶら」(空手) 方案：全套租借 (鞋/服/巾) 約 ¥1,300。不用帶臭衣服逛動物園！'
+            }
+        ]
     },
     {
         day: 6,
         date: '7/18 (週六)',
-        title: '上野悠閒散步 ➜ 帶著大片返台',
+        title: '上野散步 ➜ 返台',
         summary: '完美的收尾，帶著滿滿的回憶與戰利品回家。',
         activities: [
             {
                 time: '09:00',
                 title: '上野公園散步',
-                desc: '看最後一場街頭藝人表演，拍下全家福。',
+                desc: '往二木的菓子移動。',
                 icon: Palmtree,
-                type: 'activity',
-                camera: {
-                    mode: 'C1 (Airy)',
-                    desc: '圓滿合照',
-                    settings: 'EV +1.0'
-                }
+                type: 'activity'
             },
             {
                 time: '11:00',
