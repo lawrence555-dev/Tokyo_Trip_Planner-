@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { itineraryData } from './data/itinerary';
 import ItineraryCard from './components/ItineraryCard';
 import { Calendar, Info, Aperture, ChevronDown, ChevronUp } from 'lucide-react';
+import CameraGuide from './components/CameraGuide';
 
 function App() {
   const [activeDay, setActiveDay] = useState(1);
@@ -43,24 +44,7 @@ function App() {
             {showCameraGuide ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
           </button>
 
-          {showCameraGuide && (
-            <div className="bg-zinc-50 border-x border-b border-zinc-200 rounded-b-xl p-4 text-xs space-y-3">
-              <div className="grid grid-cols-2 gap-3 pb-3 border-b border-zinc-200">
-                <div>
-                  <span className="block text-[10px] font-bold text-zinc-400 uppercase mb-1">C1 Airy Blue</span>
-                  <span className="text-zinc-700 block">+1.3 EV, 空氣感</span>
-                </div>
-                <div>
-                  <span className="block text-[10px] font-bold text-zinc-400 uppercase mb-1">C4 Cafe/Food</span>
-                  <span className="text-zinc-700 block">小框對焦草莓</span>
-                </div>
-              </div>
-              <div className="flex items-start gap-2 text-zinc-500 italic">
-                <Info size={12} className="mt-0.5 shrink-0" />
-                <p>自動對焦 (臉部偵測)：拍女兒 ON，拍蛋糕 OFF。</p>
-              </div>
-            </div>
-          )}
+          {showCameraGuide && <CameraGuide />}
         </div>
 
         {/* Day Selector (Minimal Tab) */}

@@ -2,6 +2,8 @@
 
 A mobile-first itinerary application for a Tokyo trip, featuring a modern "Neon Tokyo" aesthetic.
 
+> 📷 **[🇯🇵 東京行：X-M5 專屬底片配方全清單 (Tokyo Trip)](./Tokyo_Trip_Planner.md)** - 7 月東京行完整優化參數檢查表。
+
 ## Tech Stack
 - React
 - Tailwind CSS
