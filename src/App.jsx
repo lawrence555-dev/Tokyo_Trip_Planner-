@@ -3,6 +3,7 @@ import { itineraryData } from './data/itinerary';
 import ItineraryCard from './components/ItineraryCard';
 import { Calendar, Info, Aperture, ChevronDown, ChevronUp } from 'lucide-react';
 import CameraGuide from './components/CameraGuide';
+import DashboardStatus from './components/DashboardStatus';
 
 function App() {
   const [activeDay, setActiveDay] = useState(1);
@@ -29,6 +30,9 @@ function App() {
           <p className="text-xs text-zinc-400 tracking-widest uppercase font-medium pl-1 border-l-2 border-zinc-200">
             A Family Photography Journey
           </p>
+
+          {/* Live Dashboard (Weather & Currency) */}
+          <DashboardStatus />
         </header>
 
         {/* Global Camera Guide (Collapsible) */}
