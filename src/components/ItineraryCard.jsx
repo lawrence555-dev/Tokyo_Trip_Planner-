@@ -1,4 +1,5 @@
 import React from 'react';
+import { MapPin } from 'lucide-react';
 
 const ItineraryCard = ({ activity, isLast }) => {
     const { time, title, desc, icon: Icon, type, highlight, camera } = activity;
@@ -60,6 +61,21 @@ const ItineraryCard = ({ activity, isLast }) => {
                                 <span className="font-medium text-zinc-500">{camera.desc}</span>
                                 <span className="font-mono text-zinc-400 opacity-80">{camera.settings}</span>
                             </div>
+                        </div>
+                    )}
+
+                    {/* Map Button */}
+                    {activity.map && (
+                        <div className="absolute bottom-5 right-5 z-20">
+                            <a
+                                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(activity.map)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center justify-center w-10 h-10 bg-zinc-50 rounded-full shadow-md text-cyan-600 hover:bg-cyan-600 hover:text-white transition-all duration-300 group/map"
+                                title="Open in Google Maps"
+                            >
+                                <MapPin size={18} />
+                            </a>
                         </div>
                     )}
                 </div>

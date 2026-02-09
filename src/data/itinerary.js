@@ -12,7 +12,8 @@ export const itineraryData = [
                 title: '抵達羽田機場',
                 desc: '搭乘 JL508 抵達。',
                 icon: Plane,
-                type: 'transit'
+                type: 'transit',
+                map: 'Haneda Airport'
             },
             {
                 time: '15:00',
@@ -20,6 +21,7 @@ export const itineraryData = [
                 desc: '開箱奢華大廳。',
                 icon: Hotel,
                 type: 'stay',
+                map: 'The Tokyo EDITION, Toranomon',
                 camera: {
                     mode: 'C1 (Airy Blue)',
                     desc: '大廳綠植空間',
@@ -31,14 +33,16 @@ export const itineraryData = [
                 title: '日本橋高島屋 S.C.',
                 desc: 'Goyard 補貨任務。',
                 icon: ShoppingBag,
-                type: 'shopping'
+                type: 'shopping',
+                map: 'Nihombashi Takashimaya S.C.'
             },
             {
                 time: '19:00',
                 title: '銀座晚餐',
                 desc: '燒肉或壽司。',
                 icon: Utensils,
-                type: 'dining'
+                type: 'dining',
+                map: 'Ginza dining'
             },
             {
                 time: '21:00',
@@ -46,6 +50,7 @@ export const itineraryData = [
                 desc: '離日本橋與銀座晚餐地點最近，外帶回飯店享用。',
                 icon: Coffee,
                 type: 'dining',
+                map: 'HARBS Lumine Yurakucho',
                 camera: {
                     mode: 'C4 (Cafe/Food)',
                     desc: '蛋糕鮮奶油層次',
@@ -59,6 +64,7 @@ export const itineraryData = [
                 icon: Camera,
                 type: 'activity',
                 highlight: true,
+                map: 'The Tokyo EDITION, Toranomon',
                 camera: {
                     mode: 'C2 (Teal & Orange)',
                     desc: '窗外橘色鐵塔',
@@ -86,7 +92,8 @@ export const itineraryData = [
                 title: '原宿 HUMAN MADE 旗艦店',
                 desc: '潮流父女裝掃貨。',
                 icon: ShoppingBag,
-                type: 'shopping'
+                type: 'shopping',
+                map: 'HUMAN MADE OFFLINE STORE HARAJUKU'
             },
             {
                 time: '13:00',
@@ -94,6 +101,7 @@ export const itineraryData = [
                 desc: '俯拍原宿街景。',
                 icon: Camera,
                 type: 'activity',
+                map: 'Tokyu Plaza Harajuku Harakado',
                 camera: {
                     mode: 'C3 (Street Hype)',
                     desc: '潮流建築與招牌',
@@ -106,6 +114,7 @@ export const itineraryData = [
                 desc: '讓女兒在草地奔跑。',
                 icon: Palmtree,
                 type: 'activity',
+                map: 'Miyashita Park',
                 camera: {
                     mode: 'C1 (Airy Blue)',
                     desc: '夕陽下清透膚色',
@@ -117,7 +126,8 @@ export const itineraryData = [
                 title: 'HARBS 澀谷 Scramble Square 店 (4F)',
                 desc: '就在宮下公園旁的高樓內，環境極佳，適合下午茶。',
                 icon: Coffee,
-                type: 'dining'
+                type: 'dining',
+                map: 'HARBS Shibuya Scramble Square'
             }
         ],
         notes: []
@@ -135,6 +145,7 @@ export const itineraryData = [
                 icon: Star,
                 type: 'activity',
                 highlight: true,
+                map: 'KidZania Tokyo',
                 camera: {
                     mode: 'C1 (Airy Blue)',
                     desc: '室內體驗',
@@ -146,7 +157,8 @@ export const itineraryData = [
                 title: 'LaLaport 購物',
                 desc: '逛街、補充物資。',
                 icon: ShoppingBag,
-                type: 'shopping'
+                type: 'shopping',
+                map: 'Urban Dock LaLaport Toyosu'
             },
             {
                 time: '18:00',
@@ -154,6 +166,7 @@ export const itineraryData = [
                 desc: '拍彩虹大橋與台場夕陽。',
                 icon: Camera,
                 type: 'activity',
+                map: 'Toyosu Park',
                 camera: {
                     mode: 'C2 (Teal & Orange)',
                     desc: '海邊夕陽',
@@ -165,7 +178,8 @@ export const itineraryData = [
                 title: 'HARBS 銀座三越店 (2F)',
                 desc: '從豐洲回銀座飯店必經，方便外帶回房。',
                 icon: Coffee,
-                type: 'dining'
+                type: 'dining',
+                map: 'HARBS Ginza Mitsukoshi'
             }
         ],
         notes: []
@@ -182,6 +196,7 @@ export const itineraryData = [
                 desc: '中目黑。避開人潮，拍攝巨型銅桶。',
                 icon: Coffee,
                 type: 'dining',
+                map: 'Starbucks Reserve Roastery Tokyo',
                 camera: {
                     mode: 'C4 (Cafe/Food)',
                     desc: '咖啡細節',
@@ -194,6 +209,7 @@ export const itineraryData = [
                 desc: '拍攝傳統寺廟與東京鐵塔同框。',
                 icon: MapPin,
                 type: 'activity',
+                map: 'Zojoji Temple',
                 camera: {
                     mode: 'C1 (Airy Blue)',
                     desc: '藍天下的紅鐵塔',
@@ -206,14 +222,16 @@ export const itineraryData = [
                 desc: '全東京排名前三的巴斯克起司蛋糕 (可取代 HARBS)。',
                 icon: Utensils,
                 type: 'dining',
-                highlight: true
+                highlight: true,
+                map: 'Balcony by 6th Azabudai Hills'
             },
             {
                 time: '15:00',
                 title: '入住上野飯店',
                 desc: '啟動洗衣模式。',
                 icon: Hotel,
-                type: 'stay'
+                type: 'stay',
+                map: 'Ueno Station'
             }
         ],
         notes: []
@@ -231,6 +249,7 @@ export const itineraryData = [
                 icon: User,
                 type: 'activity',
                 highlight: true,
+                map: 'Raffine Running Style Neo',
                 camera: {
                     mode: 'C3 (Street Hype)',
                     desc: '清晨的皇居與丸之內大樓',
@@ -243,6 +262,7 @@ export const itineraryData = [
                 desc: '在飯店與家人會合。趁早進場看熊貓與北極熊，避開中午後的人潮。',
                 icon: Palmtree,
                 type: 'activity',
+                map: 'Ueno Zoo',
                 camera: {
                     mode: 'C1 (Airy Blue)',
                     desc: '女兒驚喜眼神',
@@ -254,7 +274,8 @@ export const itineraryData = [
                 title: '阿美橫丁',
                 desc: '藥妝與伴手禮最後採購。',
                 icon: ShoppingBag,
-                type: 'shopping'
+                type: 'shopping',
+                map: 'Ameyoko Shopping District'
             },
             {
                 time: '16:00',
@@ -263,6 +284,7 @@ export const itineraryData = [
                 icon: Utensils,
                 type: 'dining',
                 highlight: true,
+                map: 'Yakiniku Bouya Ueno',
                 camera: {
                     mode: 'C4 (Cafe/Food)',
                     desc: '和牛油花',
@@ -274,7 +296,8 @@ export const itineraryData = [
                 title: 'HARBS 上野松坂屋店 (2F)',
                 desc: '買最後一晚的慶祝蛋糕回飯店享用。',
                 icon: Coffee,
-                type: 'dining'
+                type: 'dining',
+                map: 'HARBS Matsuzakaya Ueno'
             }
         ],
         notes: [
@@ -299,21 +322,24 @@ export const itineraryData = [
                 title: '上野公園散步',
                 desc: '往二木的菓子移動。',
                 icon: Palmtree,
-                type: 'activity'
+                type: 'activity',
+                map: 'Ueno Park'
             },
             {
                 time: '11:00',
                 title: '二木的菓子',
                 desc: '把最後的零食箱塞滿。',
                 icon: ShoppingBag,
-                type: 'shopping'
+                type: 'shopping',
+                map: 'Niki no Kashi'
             },
             {
                 time: '12:30',
                 title: 'Skyliner 直達成田',
                 desc: '前往成田機場。',
                 icon: Train,
-                type: 'transit'
+                type: 'transit',
+                map: 'Keisei Ueno Station'
             },
             {
                 time: '15:40',
