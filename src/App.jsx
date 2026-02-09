@@ -7,7 +7,7 @@ import DashboardStatus from './components/DashboardStatus';
 
 function App() {
   const [activeDay, setActiveDay] = useState(1);
-  const [showCameraGuide, setShowCameraGuide] = useState(true);
+  const [showCameraGuide, setShowCameraGuide] = useState(false);
 
   // Filter current day's data
   const currentDayData = itineraryData.find(d => d.day === activeDay);
