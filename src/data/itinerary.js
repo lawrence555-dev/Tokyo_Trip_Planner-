@@ -82,10 +82,11 @@ export const itineraryData = [
         activities: [
             {
                 time: '09:30',
-                title: '移防至銀座飯店',
+                title: '移防至東京銀座 6 丁目皇家花園酒店',
                 desc: '行李寄存。',
                 icon: Hotel,
-                type: 'transit'
+                type: 'transit',
+                map: 'The Royal Park Hotel Ginza 6-Chome'
             },
             {
                 time: '11:00',
@@ -187,8 +188,8 @@ export const itineraryData = [
     {
         day: 4,
         date: '7/16 (週四)',
-        title: '晨光咖啡 ➜ 鐵塔散步 ➜ 移防上野',
-        summary: '從中目黑的咖啡香氣到上野的傳統風情。',
+        title: '晨光咖啡 ➜ 鐵塔散步 ➜ 回銀座休息',
+        summary: '從中目黑的咖啡香氣到芝公園的經典風情。',
         activities: [
             {
                 time: '07:00',
@@ -227,11 +228,11 @@ export const itineraryData = [
             },
             {
                 time: '15:00',
-                title: '入住上野飯店',
+                title: '回銀座皇家花園酒店',
                 desc: '啟動洗衣模式。',
                 icon: Hotel,
                 type: 'stay',
-                map: 'Ueno Station'
+                map: 'The Royal Park Hotel Ginza 6-Chome'
             }
         ],
         notes: []
@@ -245,7 +246,7 @@ export const itineraryData = [
             {
                 time: '06:40',
                 title: '皇居熱血跑 (5km)',
-                desc: '06:40 上野出發 ➜ 07:00 Raffine 進場換裝 (日比谷線 A11 出口) ➜ 07:15 起跑 ➜ 08:20 洗澡 ➜ 08:50 退場。',
+                desc: '06:40 銀座出發 ➜ 07:00 Raffine 進場換裝 (日比谷線 A11 出口) ➜ 07:15 起跑 ➜ 08:20 洗澡 ➜ 08:50 退場。',
                 icon: User,
                 type: 'activity',
                 highlight: true,
@@ -259,7 +260,7 @@ export const itineraryData = [
             {
                 time: '09:30',
                 title: '上野動物園',
-                desc: '在飯店與家人會合。趁早進場看熊貓與北極熊，避開中午後的人潮。',
+                desc: '準備前往上野。趁早進場看熊貓與北極熊，避開中午後的人潮。',
                 icon: Palmtree,
                 type: 'activity',
                 map: 'Ueno Zoo',
